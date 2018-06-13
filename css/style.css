@@ -1,0 +1,312 @@
+/*общие стили*/
+head,
+body {
+	margin: 0;
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway/regular/raleway-regular.eot');
+    src: url('../fonts/raleway/regular/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway/regular/raleway-regular.woff2') format('woff2'),
+         url('../fonts/raleway/regular/raleway-regular.woff') format('woff'),
+         url('../fonts/raleway/regular/raleway-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway/medium/raleway-medium.eot');
+    src: url('../fonts/raleway/medium/raleway-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway/medium/raleway-medium.woff2') format('woff2'),
+         url('../fonts/raleway/medium/raleway-medium.woff') format('woff'),
+         url('../fonts/raleway/medium/raleway-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway/semibold/raleway-semibold.eot');
+    src: url('../fonts/raleway/semibold/raleway-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway/semibold/raleway-semibold.woff2') format('woff2'),
+         url('../fonts/raleway/semibold/raleway-semibold.woff') format('woff'),
+         url('../fonts/raleway/semibold/raleway-semibold.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/raleway/extrabold/raleway-extrabold.eot');
+    src: url('../fonts/raleway/extrabold/raleway-extrabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway/extrabold/raleway-extrabold.woff2') format('woff2'),
+         url('../fonts/raleway/extrabold/raleway-extrabold.woff') format('woff'),
+         url('../fonts/raleway/extrabold/raleway-extrabold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat_alternateslight';
+    src: url('../fonts/montserrat/light/montserratalternates-light.eot');
+    src: url('../fonts/montserrat/light/montserratalternates-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/light/montserratalternates-light.woff2') format('woff2'),
+         url('../fonts/montserrat/light/montserratalternates-light.woff') format('woff'),
+         url('../fonts/montserrat/light/montserratalternates-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+ul,
+li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+/*шапка*/
+.header {
+	padding-top: 40px; 
+	background-color: #2F3237;
+	background-image: url(../img/photo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+.logo {
+	font-family: 'ralewayregular', sans-serif;
+	font-size: 34px;
+	font-weight: 400;
+	text-align: right;
+	color: #fff;
+}
+.logo img {
+	width: 64px;
+	height: 56px;
+}
+.menu__item {
+	margin: 0 10px;
+	list-style: none;
+	font-family: 'montserrat_alternateslight', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: left;
+	color: #fff;
+}
+.menu__item:hover {
+	color: #c7b29a;
+}
+/*слайдер*/
+.carousel-inner {
+	height: 700px;
+	width: 600px;
+	margin: 0 auto;
+}
+.carousel-item {
+	color: #fff;
+	text-align: center;
+}
+.carousel-item.span {
+	font-family: 'ralewaymedium', sans-serif;
+	font-size: 36px;
+	font-weight: 500;
+}
+.carousel-item.h2 {
+	font-family: 'ralewayextrabold', sans-serif;
+	font-size: 52px;
+	font-weight: 700;
+}
+.carousel-item.p {
+	font-family: 'montserrat_alternateslight', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+}
+.carousel-item.a {
+	padding: 10px 0;
+	margin: 0 auto;
+	background-color: #998675;
+	text-transform: uppercase;
+	font-family: 'ralewayextrabold', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	border-radius: 5px;
+}
+.carousel-item.a:hover {
+	filter: saturate(200%);
+}
+/*навыки*/
+.skills {
+	padding: 80px;
+	margin: 0 auto;
+}
+.skills__item {
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.skills__item svg {
+	fill: #545454;
+}
+.skills__item::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 70px;
+  height: 2px;
+  background-color: #f1eee9;
+}
+.skills__item:hover svg {
+	fill: #c7b299;
+}
+.skills__item:hover h3 {
+	color: #c7b299;
+}
+.skills__item:hover::after {
+	background-color: #c7b299;
+}
+.skills__item h3 {
+	margin-top: 30px;
+	font-family: 'ralewaysemibold', sans-serif;
+	color:  #555555;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+}
+.skills__item p {
+	margin-top: 30px;
+	font-family: 'montserrat_alternateslight', sans-serif;
+	color:  #8c8c8c;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: center;
+}
+.realization-wrapper {
+	padding-top: 84px;
+	background-color: #fbfaf8;
+}
+.realization h2 {
+	font-family: 'ralewaysemibold', sans-serif;
+	color:  #555;
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+}
+.realization p {
+	margin: 0 auto;
+	font-family: 'ralewaysemibold', sans-serif;
+	color:  #8c8c8c;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 28px;
+	text-align: center;
+}
+ #carousel {
+ 	margin: 0 auto;
+ 	width:960px;
+	height:500px;
+    position:relative;
+    clear:both;
+    overflow:hidden;
+}
+#carousel img {
+    visibility:hidden; 
+    cursor:pointer;
+}
+.aside-wrapper {
+	padding: 48px 30px;
+	background: #211b19;
+	background: -moz-linear-gradient(left, #211b19 0%, #4c3428 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, #211b19), color-stop(100%, #4c3428));
+	background: -webkit-linear-gradient(left, #211b19 0%, #4c3428 100%);
+	background: -o-linear-gradient(left, #211b19 0%, #4c3428 100%);
+	background: -ms-linear-gradient(left, #211b19 0%, #4c3428 100%);
+	background: linear-gradient(to right, #211b19 0%, #4c3428 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211b19', endColorstr='#4c3428', GradientType=1 );
+}
+.aside__item.a {
+	padding: 10px 0;
+	margin: 0 auto;
+	background-color: #998675;
+	text-transform: uppercase;
+	font-family: 'ralewayextrabold', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+.aside__item.a:hover {
+	filter: saturate(200%);
+}
+
+.aside__item.txt1 {
+	font-family: 'ralewayregular', sans-serif;
+	color: #c7b299;
+	font-size: 28px;
+	font-weight: 400;
+	text-align: left;
+}
+.aside__item.txt2 {
+	font-family: 'ralewayregular', sans-serif;
+	color: #fff;
+	font-size: 28px;
+	font-weight: 400;
+	text-align: left;
+}
+.aside__item.txt3 {
+	font-family: 'montserrat_alternateslight', sans-serif;
+	color: #615855;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: left;
+}
+.project__header {
+	padding: 80px 0 0 0;
+	font-family: 'ralewaysemibold', sans-serif;
+	color:  #555;
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+}
+.project__txt {
+	margin: 0 auto;
+	font-family: 'montserrat_alternateslight', sans-serif;
+	color: #8c8c8c;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 28px;
+	text-align: center;
+}
+.project__filters {
+	margin: 0 auto;
+	padding: 40px 0;
+}
+.project__filters a {
+	padding: 5px 10px;
+	margin: 0 auto;
+	font-family: 'montserrat_alternateslight', sans-serif;
+	color:  #8c8c8c;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 21px;
+	text-align: center;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	border-color:  #ebebeb;
+	box-sizing: border-box;
+	background-color:  rgba(17, 17, 17, 0);
+}
+.project__filters a:hover {
+	background-color: #998675;
+	color: #fff;
+}
+.project__filters a:active {
+	filter: saturate(200%);
+}
